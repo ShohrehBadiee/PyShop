@@ -1,4 +1,5 @@
 .idea/*
 .env/*
 *.pyc
-*.local.py
+*_local.py
+src/local
