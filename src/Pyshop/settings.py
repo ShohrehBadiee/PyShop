@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+ALLOWED_HOSTS=['127.0.0.1']
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
@@ -58,7 +59,7 @@ LANGUAGE_CODE = 'en-us'
 
 FIRST_DAY_OF_WEEK = 6
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tehran'
 
 USE_I18N = True
 
@@ -69,7 +70,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
-
 STATIC_URL = '/static/'
 
 
@@ -78,3 +78,5 @@ STATIC_URL = '/static/'
 FIXTURE_DIRS = (
     BASE_DIR+'/../test/fixtures'
 )
+
+from .settings_local import *
