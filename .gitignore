@@ -2,4 +2,4 @@
 .env/*
 *.pyc
 *_local.py
-src/local
+local/*
