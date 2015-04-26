@@ -10,9 +10,10 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-ALLOWED_HOSTS=['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1']
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
@@ -32,6 +33,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'product'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -76,7 +78,7 @@ STATIC_URL = '/static/'
 # Test Related Settings
 
 FIXTURE_DIRS = (
-    BASE_DIR+'/../test/fixtures'
+    BASE_DIR + '/../test/fixtures'
 )
 
 from .settings_local import *
